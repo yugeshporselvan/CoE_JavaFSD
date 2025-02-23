@@ -1,0 +1,105 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Sections */
+  section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  /* Home Section */
+  #home {
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    section {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #home h1 {
+      font-size: 1.5rem;
+    }
+  }
+/* Example for mobile screens */
+@media (max-width: 768px) {
+    section {
+      padding: 10px;
+    }
+  }
+
+  /* Flexbox Layout for navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Grid layout for Speakers */
+  #speakers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  /* Animations for transitions */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  section {
+    animation: fadeIn 1s ease-out;
+  }
+  
