@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+
+    <title>InnoVateX</title>
+    
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.jpg" id="logo-img"></a>
+
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#course_call">About</a></li>
+                    <li><a href="speaker.html">Speaker</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="Contact_page.html">Contact</a></li>
+                </ul>
+            </div> 
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+       
+        <div class="text-box">
+            <h1>Welcome to InnoVateX Tech Conference 2024!</h1>
+            <p>Join us at InnoVateX 2025, where cutting-edge technology meets innovation. This premier tech conference brings together industry leaders, startups, developers, and tech enthusiasts from around the globe to explore the latest advancements in AI, cybersecurity, blockchain, cloud computing, and more!</p>
+            
+            <ol> Date: 15th march</ol>
+            <ol> Location: Chennai</ol>
+            <ol> Theme: "Shaping the Future of Technology"</ol>
+            
+        </div>
+        <div id="countdown" style="font-size: 24px; font-weight: bold; color: white;"></div>
+    
+
+    <script>
+     // Set the conference start date (YYYY, MM-1, DD, HH, MM, SS)
+const conferenceDate = new Date(2025, 3, 15, 9, 0, 0).getTime();  // Example: August 15, 2024, 9:00 AM
+
+// Update the countdown every 1 second
+const timer = setInterval(() => {
+    const now = new Date().getTime(); // Current time
+    const timeLeft = conferenceDate - now; // Time difference
+
+    if (timeLeft <= 0) {
+        document.getElementById("countdown").innerHTML = "Conference has started!";
+        clearInterval(timer); // Stop the timer
+        return;
+    }
+
+    // Convert milliseconds into days, hours, minutes, and seconds
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    // Display countdown
+    document.getElementById("countdown").innerHTML = 
+        `Conference gonna starts in <h2>${days}d ${hours}h ${minutes}m ${seconds}s</h2>`;
+}, 1000);
+
+    </script>
+    
+    </section>
+
+  
+
+
+    
+    
+
+
+    
+   
+
+
+    <section class="campus">
+        <h1> Our Campus</h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quisquam atque non voluptate</p> -->
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="image/cm1.jfif" alt="">
+                    <div class="layer">
+                        <h3>Environment</h3>
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="image/cm2.jfif" alt="">
+                    <div class="layer">
+                        <h3>Community</h3>
+                    </div>
+                </div>
+
+                <div class="campus-col">
+                    <img src="image/cm3.jfif" alt="">
+                    <div class="layer">
+                        <h3>Education</h3>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--Facilities Section-->
+
+    <section class="facilities">
+        <h1> Our facilities</h1>
+        <p>Facilities provide for Students by Anna University</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="image/canteen.jfif" alt="">
+                <h3>Canteen</h3>
+                <p>The objective of the Canteen and meal service is to protect by reducing the risk of foodborne illness, with proper sanitary conditions.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="image/auditorium.jfif" alt="">
+                <h3>Auditorium</h3>
+                <p>The college is having a huge indoor auditorium with a professionally-deployed acoustic system and a seating capacity of about 200 people.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="image/hostel.jfif" alt="">
+                <h3>Speakers</h3>
+                <p>Professional speakers only</p>
+            </div>
+        </div>
+        </section>
+
+    
+       
+
+    <!--Javascript is Start-->
+    <script src="javascript/main_script.js"></script>
+</body>
+
+    
+    
+</html>

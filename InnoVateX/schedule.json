@@ -1,0 +1,27 @@
+[
+    {
+        "title": "AI Innovations",
+        "track": "Artificial Intelligence",
+        "description": "Exploring the latest advancements in AI."
+    },
+    {
+        "title": "Cybersecurity Fundamentals",
+        "track": "Cybersecurity",
+        "description": "Understanding the basics of cybersecurity."
+    },
+    {
+        "title": "Cloud Computing Trends",
+        "track": "Cloud Computing",
+        "description": "The future of cloud technologies and infrastructure."
+    },
+    {
+        "title": "Machine Learning in Finance",
+        "track": "Artificial Intelligence",
+        "description": "How ML is transforming the finance sector."
+    },
+    {
+        "title": "Ethical Hacking 101",
+        "track": "Cybersecurity",
+        "description": "An introduction to ethical hacking techniques."
+    }
+]
